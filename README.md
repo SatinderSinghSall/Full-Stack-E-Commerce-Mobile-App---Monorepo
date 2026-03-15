@@ -461,3 +461,413 @@ For questions, collaboration, or academic discussions:
 ---
 
 **If you found this project helpful, please ⭐ the repository.**
+
+---
+
+# 🛍️ Full-Stack E-Commerce Mobile App
+
+A **modern full-stack e-commerce mobile application** built with **React Native (Expo)** and **Node.js / Express / MongoDB**.
+The app provides a complete shopping experience including **authentication, product browsing, cart management, checkout, orders, admin management, and payment integration**.
+
+This project demonstrates **mobile development, backend APIs, authentication, cloud services, and full-stack architecture**.
+
+---
+
+# 📱 Screenshots (Coming Soon...)
+
+- Home Screen
+- Product Page
+- Cart
+- Checkout
+- Orders
+- Admin Dashboard
+
+---
+
+# 🚀 Features
+
+## 👤 User Features
+
+- User authentication using **Clerk**
+- Browse products
+- Product detail page
+- Add / remove products from cart
+- Wishlist (favorites)
+- Address management
+- Checkout flow
+- Cash on delivery support
+- Order placement
+- Order history
+- Order tracking timeline
+- Order details page
+- Lottie success animations
+
+---
+
+## 🛒 Shopping Features
+
+- Product catalog
+- Categories
+- Product images
+- Cart management
+- Quantity updates
+- Size selection
+- Price calculations
+- Shipping and tax support
+
+---
+
+## 📦 Order System
+
+- Create order from cart
+- Order status tracking
+- Order lifecycle:
+
+```
+Placed → Processing → Shipped → Delivered
+```
+
+- Payment status tracking
+
+---
+
+## 🛠️ Admin Features
+
+Admin dashboard includes:
+
+- Product management
+- Add products
+- Edit products
+- Delete products
+- Order management
+- View all orders
+- Update order status
+
+---
+
+## 📍 Address Management
+
+Users can:
+
+- Add addresses
+- Edit addresses
+- Delete addresses
+- Set default address
+
+---
+
+## 💳 Payment System
+
+Supports:
+
+- Cash on Delivery
+- Stripe integration (backend ready)
+
+---
+
+# 🏗️ Tech Stack
+
+## Frontend (Mobile App)
+
+| Technology                   | Purpose                       |
+| ---------------------------- | ----------------------------- |
+| React Native                 | Mobile framework              |
+| Expo                         | Development environment       |
+| Expo Router                  | Navigation system             |
+| NativeWind                   | Tailwind CSS for React Native |
+| Axios                        | API requests                  |
+| Clerk                        | Authentication                |
+| Lottie                       | Animations                    |
+| React Navigation             | Navigation system             |
+| React Native Gesture Handler | Gesture support               |
+| React Native Toast Message   | Notifications                 |
+
+---
+
+## Backend
+
+| Technology | Purpose           |
+| ---------- | ----------------- |
+| Node.js    | Runtime           |
+| Express.js | Backend framework |
+| MongoDB    | Database          |
+| Mongoose   | ODM               |
+| Clerk      | Authentication    |
+| Stripe     | Payments          |
+| Cloudinary | Image uploads     |
+| Multer     | File uploads      |
+| CORS       | API security      |
+
+---
+
+# 📂 Project Structure
+
+```
+E-Commerce Mobile App
+│
+├── client (React Native Expo App)
+│
+│   ├── app
+│   │   ├── (auth)
+│   │   ├── (tabs)
+│   │   ├── admin
+│   │   ├── addresses
+│   │   ├── orders
+│   │   ├── product
+│   │   └── checkout.tsx
+│   │
+│   ├── assets
+│   │   ├── images
+│   │   ├── animations
+│   │   ├── constants
+│   │   └── screenshots
+│   │
+│   └── context
+│       ├── CartContext
+│       └── WishlistContext
+│
+└── server (Node.js Backend)
+    │
+    ├── config
+    │   ├── db
+    │   ├── cloudinary
+    │   └── env
+    │
+    ├── controllers
+    ├── models
+    ├── routes
+    ├── middleware
+    └── scripts
+```
+
+---
+
+# ⚙️ Installation
+
+## 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/yourusername/ecommerce-mobile-app.git
+cd ecommerce-mobile-app
+```
+
+---
+
+## 2️⃣ Install dependencies
+
+### Client
+
+```bash
+cd client
+npm install
+```
+
+### Server
+
+```bash
+cd server
+npm install
+```
+
+---
+
+# ▶️ Running the Project
+
+## Start Backend
+
+```bash
+cd server
+npm run server
+```
+
+Backend runs on:
+
+```
+http://localhost:3000
+```
+
+---
+
+## Start Mobile App
+
+```bash
+cd client
+npm start
+```
+
+Run on:
+
+```
+Android Emulator
+iOS Simulator
+Expo Go
+Web Browser
+```
+
+---
+
+# 🌐 API Routes
+
+## Products
+
+```
+GET /api/products
+GET /api/products/:id
+POST /api/products
+PUT /api/products/:id
+DELETE /api/products/:id
+```
+
+---
+
+## Cart
+
+```
+GET /api/cart
+POST /api/cart/add
+PUT /api/cart/item/:productId
+DELETE /api/cart/item/:productId
+DELETE /api/cart
+```
+
+---
+
+## Orders
+
+```
+GET /api/orders
+GET /api/orders/:id
+POST /api/orders
+PUT /api/orders/:id/status
+```
+
+---
+
+## Addresses
+
+```
+GET /api/addresses
+POST /api/addresses
+PUT /api/addresses/:id
+DELETE /api/addresses/:id
+```
+
+---
+
+## Wishlist
+
+```
+GET /api/wishlist
+POST /api/wishlist
+DELETE /api/wishlist/:productId
+```
+
+---
+
+# 🔐 Authentication
+
+Authentication is handled using **Clerk**.
+
+Features:
+
+- Secure authentication
+- Token-based API access
+- User session management
+- Admin role support
+
+---
+
+# 📦 Database Models
+
+Main models:
+
+```
+User
+Product
+Cart
+Order
+Address
+Wishlist
+```
+
+---
+
+# 📊 Order Flow
+
+```
+User adds product to cart
+        ↓
+User selects address
+        ↓
+Checkout
+        ↓
+Order created
+        ↓
+Cart cleared
+        ↓
+Order status tracking
+```
+
+---
+
+# 🎨 UI / UX Highlights
+
+- Modern mobile UI
+- Tailwind styling with NativeWind
+- Smooth animations
+- Loading states
+- Toast notifications
+- Responsive layout
+- Safe area support
+
+---
+
+# 📈 Future Improvements
+
+Planned improvements:
+
+- Stripe payment gateway
+- Push notifications
+- Order tracking map
+- Product reviews
+- Search functionality
+- Pagination
+- Admin analytics dashboard
+- Image optimization
+- Performance improvements
+
+---
+
+# 👨‍💻 Author
+
+**Satinder Singh Sall**
+
+Full-Stack Developer
+
+Technologies:
+
+```
+React Native
+Node.js
+MongoDB
+TypeScript
+Expo
+```
+
+---
+
+# 📜 License
+
+This project is licensed under the **ISC License**.
+
+---
+
+# ⭐ Support
+
+If you like this project:
+
+⭐ Star the repository
+🍴 Fork the project
+📢 Share it with others
+
+---
